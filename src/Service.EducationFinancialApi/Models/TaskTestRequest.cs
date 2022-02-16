@@ -2,7 +2,7 @@
 
 namespace Service.EducationFinancialApi.Models
 {
-	public class TaskTestRequest: TaskRequestBase
+	public class TaskTestRequest : TaskRequestBase
 	{
 		[Required]
 		public TaskAnswer[] Answers { get; set; }

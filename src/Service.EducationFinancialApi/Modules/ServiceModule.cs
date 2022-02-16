@@ -2,7 +2,6 @@
 using Service.Core.Client.Services;
 using Service.TutorialFinancial.Client;
 using Service.UserInfo.Crud.Client;
-using Service.UserReward.Client;
 
 namespace Service.EducationFinancialApi.Modules
 {
@@ -12,7 +11,6 @@ namespace Service.EducationFinancialApi.Modules
 		{
 			builder.RegisterUserInfoCrudClient(Program.Settings.UserInfoCrudServiceUrl);
 			builder.RegisterTutorialFinancialClient(Program.Settings.TutorialFinancialServiceUrl);
-			builder.RegisterUserRewardClient(Program.Settings.UserRewardServiceUrl);
 
 			builder.RegisterType<SystemClock>().AsImplementedInterfaces().SingleInstance();
 

@@ -22,8 +22,5 @@ namespace Service.EducationFinancialApi.Settings
 
 		[YamlProperty("EducationFinancialApi.JwtAudience")]
 		public string JwtAudience { get; set; }
-
-		[YamlProperty("EducationFinancialApi.UserRewardServiceUrl")]
-		public string UserRewardServiceUrl { get; set; }
 	}
 }

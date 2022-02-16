@@ -1,6 +1,6 @@
 ﻿namespace Service.EducationFinancialApi.Models
 {
-	public class TaskTextRequest: TaskRequestBase
+	public class TaskTextRequest : TaskRequestBase
 	{
 	}
 }

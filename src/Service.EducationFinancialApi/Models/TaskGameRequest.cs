@@ -2,7 +2,7 @@
 
 namespace Service.EducationFinancialApi.Models
 {
-	public class TaskGameRequest: TaskRequestBase
+	public class TaskGameRequest : TaskRequestBase
 	{
 		[Required]
 		public bool Passed { get; set; }
