@@ -9,6 +9,7 @@ using Service.Education.Helpers;
 using Service.Education.Structure;
 using Service.EducationFinancialApi.Mappers;
 using Service.EducationFinancialApi.Models;
+using Service.Grpc;
 using Service.TutorialFinancial.Grpc;
 using Service.TutorialFinancial.Grpc.Models;
 using Service.UserInfo.Crud.Grpc;
@@ -21,7 +22,7 @@ namespace Service.EducationFinancialApi.Controllers
 		private readonly ITutorialFinancialService _tutorialService;
 
 		public EducationController(ITutorialFinancialService tutorialService,
-			IUserInfoService userInfoService,
+			IGrpcServiceProxy<IUserInfoService> userInfoService,
 			IEncoderDecoder encoderDecoder, ISystemClock systemClock,
 			ILogger<EducationController> logger) : base(systemClock, encoderDecoder, userInfoService, logger)
 		{
