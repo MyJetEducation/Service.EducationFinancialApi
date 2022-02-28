@@ -14,9 +14,6 @@ namespace Service.EducationFinancialApi.Settings
 		[YamlProperty("EducationFinancialApi.ElkLogs")]
 		public LogElkSettings ElkLogs { get; set; }
 
-		[YamlProperty("EducationFinancialApi.UserInfoCrudServiceUrl")]
-		public string UserInfoCrudServiceUrl { get; set; }
-
 		[YamlProperty("EducationFinancialApi.TutorialFinancialServiceUrl")]
 		public string TutorialFinancialServiceUrl { get; set; }
 
