@@ -16,8 +16,5 @@ namespace Service.EducationFinancialApi.Settings
 
 		[YamlProperty("EducationFinancialApi.TutorialFinancialServiceUrl")]
 		public string TutorialFinancialServiceUrl { get; set; }
-
-		[YamlProperty("EducationFinancialApi.JwtAudience")]
-		public string JwtAudience { get; set; }
 	}
 }

@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NSwag.Annotations;
-using Service.Core.Client.Constants;
 using Service.Core.Client.Services;
 using Service.Education.Helpers;
 using Service.Education.Structure;
@@ -11,6 +10,7 @@ using Service.EducationFinancialApi.Mappers;
 using Service.EducationFinancialApi.Models;
 using Service.TutorialFinancial.Grpc;
 using Service.TutorialFinancial.Grpc.Models;
+using Service.Web;
 
 namespace Service.EducationFinancialApi.Controllers
 {
