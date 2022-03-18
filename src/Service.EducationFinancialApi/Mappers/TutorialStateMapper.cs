@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using Service.EducationFinancialApi.Models;
 using Service.TutorialFinancial.Grpc.Models.State;
+using Service.TutorialFinancial.Grpc.Models.Task;
 
 namespace Service.EducationFinancialApi.Mappers
 {
@@ -27,7 +28,7 @@ namespace Service.EducationFinancialApi.Mappers
 			}
 			: null;
 
-		private static TutorialStateUnit ToModel(this UnitStateGrpcModel grpcModel) => grpcModel != null
+		private static TutorialStateUnit ToModel(this StateGrpcModel grpcModel) => grpcModel != null
 			? new TutorialStateUnit
 			{
 				Unit = grpcModel.Unit,

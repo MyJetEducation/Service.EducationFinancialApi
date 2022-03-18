@@ -9,7 +9,7 @@ using Service.EducationFinancialApi.Mappers;
 using Service.EducationFinancialApi.Models;
 using Service.Grpc;
 using Service.TutorialFinancial.Grpc;
-using Service.TutorialFinancial.Grpc.Models;
+using Service.TutorialFinancial.Grpc.Models.State;
 using Service.Web;
 
 namespace Service.EducationFinancialApi.Controllers
