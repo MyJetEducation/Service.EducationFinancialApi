@@ -8,7 +8,7 @@ namespace Service.EducationFinancialApi.Modules
 	{
 		protected override void Load(ContainerBuilder builder)
 		{
-			builder.RegisterTutorialFinancialClient(Program.Settings.TutorialFinancialServiceUrl);
+			builder.RegisterTutorialFinancialClient(Program.Settings.EducationFlowServiceUrl);
 
 			builder.RegisterType<SystemClock>().AsImplementedInterfaces().SingleInstance();
 

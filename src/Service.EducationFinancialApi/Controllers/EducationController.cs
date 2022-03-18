@@ -5,7 +5,6 @@ using Microsoft.Extensions.Logging;
 using NSwag.Annotations;
 using Service.Core.Client.Services;
 using Service.Education.Helpers;
-using Service.Education.Structure;
 using Service.EducationFinancialApi.Mappers;
 using Service.EducationFinancialApi.Models;
 using Service.TutorialFinancial.Grpc;
@@ -28,7 +27,7 @@ namespace Service.EducationFinancialApi.Controllers
 		[SwaggerResponse(HttpStatusCode.OK, typeof(DataResponse<FinishStateResponse>), Description = "Ok")]
 		public async ValueTask<IActionResult> GetFinishStateAsync([FromBody] GetFinishStateRequest request)
 		{
-			if (request.Unit != null && EducationHelper.GetUnit(EducationTutorial.FinancialServices, request.Unit.Value) == null)
+			if (request.Unit != null && EducationHelper.GetUnit(Tutorial, request.Unit.Value) == null)
 				return StatusResponse.Error(ResponseCode.NotValidEducationRequestData);
 
 			return await Process(userId => _tutorialService.GetFinishStateAsync(new GetFinishStateGrpcRequest { UserId = userId, Unit = request.Unit }), grpc => grpc.ToModel());
