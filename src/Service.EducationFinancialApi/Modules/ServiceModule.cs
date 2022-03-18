@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Microsoft.Extensions.Logging;
 using Service.Core.Client.Services;
 using Service.TutorialFinancial.Client;
 
@@ -8,7 +9,7 @@ namespace Service.EducationFinancialApi.Modules
 	{
 		protected override void Load(ContainerBuilder builder)
 		{
-			builder.RegisterTutorialFinancialClient(Program.Settings.EducationFlowServiceUrl);
+			builder.RegisterTutorialFinancialClient(Program.Settings.EducationFlowServiceUrl, Program.LogFactory.CreateLogger(typeof(TutorialFinancialClientFactory)));
 
 			builder.RegisterType<SystemClock>().AsImplementedInterfaces().SingleInstance();
 
