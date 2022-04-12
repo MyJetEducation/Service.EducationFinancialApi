@@ -27,6 +27,7 @@
     <PackageReference Include="MyJetEducation.Service.TutorialFinancial.Client" Version="1.0.4" />
     <PackageReference Include="MyJetEducation.Service.Web" Version="1.0.3" />
     <PackageReference Include="MyJetEducation.Service.Grpc" Version="1.0.7" />
+    <PackageReference Include="SimpleTrading.Common" Version="1.0.32" />
   </ItemGroup>
 
   <ItemGroup>
